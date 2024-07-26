@@ -13,7 +13,7 @@ def save_audio(audio):
     return filename
 
 interface = gr.Interface(
-    fn=save_audio, 
+    fn=save_audio, x
     inputs=gr.Audio(type="numpy", label="Record your audio"), 
     outputs=gr.File(label="Download your recorded audio"),
     title="Audio Recorder",
